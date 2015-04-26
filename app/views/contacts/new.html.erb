@@ -1,0 +1,26 @@
+<div class="row cform">
+  <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+    <div class="well">
+      <%= form_for @contact do |f| %>
+        <div class="form-group">
+          <%= f.label :name, class: 'text-muted' %>
+          <%= f.text_field :name, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :email, class: 'text-muted' %>
+          <%= f.email_field :email, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :comments, class: 'text-muted'  %>
+          <%= f.text_area :name, class: 'form-control' %>
+        </div>
+
+      <center>
+        <%=  f.submit 'Submit', class: 'btn btn-success btn-sm btn-block' %>
+      </center>
+      <% end %>
+    </div>
+  </div>
+</div>
