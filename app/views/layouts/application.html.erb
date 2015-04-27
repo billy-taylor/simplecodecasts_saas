@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DLH - Dev's Little Helper</title>
+  <title>SaaS_Match :: A Hub for SaaS Enthusiasts</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -17,23 +17,27 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path, class: 'navbar-brand' do %>
-        <i class="fa fa-group"></i>
-        DLH
+        <i class="fa fa-empire"></i>
+        SaaS_Match
       <% end %>
 
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Contact Us", new_contact_path %></li>
+        <li><%= link_to "About_Us", about_path %></li>
+        <li><%= link_to "Contact_Us", new_contact_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
 
 <div class="container">
-<%= yield %>
-  </div>
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+    <% end %> 
+  
+  <%= yield %>
+</div>
 
 </body>
 </html>
