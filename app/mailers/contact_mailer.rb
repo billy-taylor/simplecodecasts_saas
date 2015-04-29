@@ -1,4 +1,4 @@
-class ConactMailer < ActionMailer::Base  
+class ContactMailer < ActionMailer::Base
   default to: 'billytaylor.nz@gmail.com'
   
   def contact_email(name, email, body)
@@ -7,5 +7,5 @@ class ConactMailer < ActionMailer::Base
     @body = body
     
     mail(from: email, subject: 'SaaS_Match Contact Form Message')
-  end 
+  end
 end
