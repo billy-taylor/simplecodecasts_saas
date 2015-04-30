@@ -7,14 +7,14 @@
   <div class="col-md-6">
     <div class="well">
       <h2 class="text-center">Basic Membership</h2>
-      <h5 class="text-center">Sign up for free and get basic access to our community members.</h5></br>
+      <h5 class="text-center">Sign up for free and get basic access to all our community members.</h5></br>
       <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
     </div>
   </div>
   <div class="col-md-6">
     <div class="well">
       <h2 class="text-center">Pro Membership</h2>
-      <h5 class="text-center">Sign up to the pro account and get unlimited access to the community with contact details!</h5>
+      <h5 class="text-center">Get unlimited networking access to our entire community.</h5></br>
       <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
     </div>
   </div>
