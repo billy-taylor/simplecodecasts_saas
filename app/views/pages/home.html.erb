@@ -3,3 +3,20 @@
 <h1><i class="fa fa-empire"></i> SaaS_Match</h1>
   <h4>Where developers, entrepreneurs and investors come together to<br>create awesome SaaS (software as a service) products.</h4>
 </div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-center">Basic Membership</h2>
+      <h5 class="text-center">Sign up for free and get basic access to the community.</h5>
+      <br/>
+      <%= link_to "Sign up with Basic", new_user_registration_path, class: 'btn btn-primary btn-sm btn-block' %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-center">Pro Membership</h2>
+      <h5 class="text-center">Sign up to the pro account and get unlimited access to the community with contact details!</h5>
+      <%= link_to "Sign up with Pro", new_user_registration_path, class: 'btn btn-success btn-sm btn-block' %>
+    </div>
+  </div>
+</div>
