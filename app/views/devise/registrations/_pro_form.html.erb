@@ -1,6 +1,11 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
+<<<<<<< HEAD
+=======
+  <%= hidden_field_tag 'plan', params[:plan] %>
+
+>>>>>>> dev
   <div class="field form-group">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, class: 'form-control' %>
@@ -34,6 +39,10 @@
   </div>
 
   <div class="actions form-group">
+<<<<<<< HEAD
     <%= f.submit "Sign up", class: 'btn btn-success btn-sm btn-block' %>
+=======
+    <%= f.submit "Sign up", class: 'btn btn-success btn-sm btn-block', id: 'form-submit-btn' %>
+>>>>>>> dev
   </div>
 <% end %>
