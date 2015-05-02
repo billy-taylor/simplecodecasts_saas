@@ -1,4 +1,12 @@
-.job_title_icon {
+h3 {
+  color: #5B5D60;  
+}
+
+.description-color {
+  color: #337ab7;
+}
+
+.job-title-icon {
   display: inline-block;
   color: #fff;
   width: 30px;
@@ -7,5 +15,38 @@
   border: 2px #337ab7 solid;
   background-color: #337ab7;
   text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.user-show-avatar {
+  height: 128px;
+  width: 128px;
+}
+
+.user-index-avatar {
+  border-radius: 50%;
+  border: 2px solid #5B5D60;
+  -webkit-box-shadow: 2px 6px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow:    2px 6px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow:         2px 6px 5px 0px rgba(50, 50, 50, 0.7);
+}
+
+.well.profile-description {
+  background-color: #5cb85c;
+  border-color: #4cae4c; 
+}
+
+.well.contact-info {  
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.well.profile-block {
+  color: #fff;
+  h3 {
+    margin-top: 0px;
+    color: #fff;
+  }
   
 }
