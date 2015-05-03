@@ -8,11 +8,11 @@
       <div class="well">
         <h2 class="text-center">Your Profile</h2>
         <% if current_user.profile %>
-            <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-sm btn-block' %>
-            <%= link_to "View your profile", user_path(current_user), class: 'btn btn-default btn-sm btn-block' %>
+            <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-primary btn-sm btn-block' %>
+            <%= link_to "View your profile", user_path(current_user), class: 'btn btn-warning btn-sm btn-block' %>
           <% else %>
             <p>Create your profile so that you can share your information with the community.</p>
-            <%= link_to "Create your profile", new_user_profile_path(current_user), class: 'btn btn-default btn-sm btn-block'%>
+            <%= link_to "Create your profile", new_user_profile_path(current_user), class: 'btn btn-success btn-sm btn-block'%>
           <% end %>
         </div>
       </div>
@@ -20,7 +20,7 @@
         <div class="well">
           <h2 class="text-center">The Community</h2>
           <p class="text-center">Visit the community to meet other developers, entrepreneurs, and investors!</p>
-          <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-sm btn-block' %>
+          <%= link_to "Visit the community", users_path, class: 'btn btn-success btn-sm btn-block' %>
         </div>
       </div>
   <% else %>
@@ -28,14 +28,14 @@
         <div class="well">
           <h2 class="text-center">Basic Membership</h2>
           <h5 class="text-center">Sign up for free and get basic access to all our community members.</h5></br>
-          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-sm btn-block' %>
         </div>
       </div>
       <div class="col-md-6">
         <div class="well">
           <h2 class="text-center">Pro Membership</h2>
           <h5 class="text-center">Get unlimited networking access to our entire community.</h5></br>
-          <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+          <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-sm btn-block' %>
         </div>
       </div>
 <% end %>
